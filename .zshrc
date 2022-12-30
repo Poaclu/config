@@ -48,7 +48,7 @@ alias mv="mv -iv"
 alias rm="rm -virf"
 
 # bare git repo alias for dotfiles
-alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+alias dots="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 
 # use neovim instead of vim
 alias vim="nvim"
