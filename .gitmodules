@@ -1,0 +1,12 @@
+[submodule ".dotfiles_old"]
+	path = .dotfiles_old
+	url = git@github.com:Poaclu/dotfiles.git
+[submodule "sources/suckless/st"]
+	path = sources/suckless/st
+	url = git@github.com:Poaclu/st.git
+[submodule "sources/suckless/dwm"]
+	path = sources/suckless/dwm
+	url = git@github.com:Poaclu/dwm.git
+[submodule "sources/suckless/slstatus"]
+	path = sources/suckless/slstatus
+	url = git@github.com:Poaclu/slstatus.git
