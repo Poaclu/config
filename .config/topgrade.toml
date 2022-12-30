@@ -2,7 +2,7 @@
 assume_yes = true
 
 # Disable specific steps - same options as the command line flag
-disable = ["gnome_shell_extensions", "firmware", "vim"]
+disable = ["gnome_shell_extensions", "git_repos", "vim"]
 
 # Ignore failures for these steps
 #ignore_failures = ["powershell"]
@@ -14,7 +14,7 @@ disable = ["gnome_shell_extensions", "firmware", "vim"]
 no_retry = true
 
 # Run inside tmux
-run_in_tmux = true
+#run_in_tmux = true
 
 # List of remote machines with Topgrade installed on them
 remote_topgrades = ["killi"]
@@ -41,10 +41,9 @@ cleanup = true
 max_concurrency = 5
 # Additional git repositories to pull
 repos = [
-    "~/.dotfiles",
-    "~/suckless/dwm",
-    "~/suckless/st",
-    "~/suckless/slstatus"
+    "~/sources/suckless/dwm",
+    "~/sources/suckless/st",
+    "~/sources/suckless/slstatus"
 ]
 
 # Don't pull the predefined git repos
@@ -61,6 +60,8 @@ repos = [
 #"Emacs Snapshot" = "rm -rf ~/.emacs.d/elpa.bak && cp -rl ~/.emacs.d/elpa ~/.emacs.d/elpa.bak"
 
 # Custom commands
+"Updating dotfiles" = "git --git-dir=$HOME/.dotfiles --work-tree=$HOME pull"
+"Updating dotfiles submodules" = "git --git-dir=$HOME/.dotfiles --work-tree=$HOME submodule foreach git pull"
 [commands]
 #"Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
 
