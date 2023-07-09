@@ -17,6 +17,8 @@ plugins=(git
 	tmux)
 source $ZSH/oh-my-zsh.sh
 
+eval "$(starship init zsh)"
+
 # Use shell (generic) rc
 source $HOME/.shellrc
 
