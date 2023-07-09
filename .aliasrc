@@ -60,7 +60,7 @@ alias update-fc='sudo fc-cache -fv'
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 
 #clear shortcut
-alias cls="clear && fastfetch"
+alias cls="clear && neofetch"
 
 #Shutdown and reboot shortcuts
 alias ssn="sudo shutdown now"
