@@ -4,7 +4,7 @@ export VISUAL=bat
 export EDITOR=nvim
 
 #welcome command
-fastfetch
+neofetch
 
 ### "bat" as manpager
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
@@ -24,7 +24,7 @@ for command in mount umount sv pacman updatedb su shutdown poweroff reboot ; do
 done; unset command
 
 # Add stuff to PATH
-export PATH=$PATH:/home/poaclu/.cargo/bin:/home/poaclu/.local/bin:/var/lib/snapd/snap/bin
+export PATH=$PATH:~/.cargo/bin:~/.local/bin:/var/lib/snapd/snap/bin
 
 #Thefuck
 eval $(thefuck --alias)
