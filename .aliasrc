@@ -1,7 +1,11 @@
 ### ALIASES ###
 
 # Changing "ls" to "exa"sudo pacman -S git dlang-dmd
-alias ls='exa -lah --color=always --group-directories-first'
+alias ls='exa --color=always --group-directories-first'
+alias la='exa -a --color=always --group-directories-first'
+alias ll='exa -la --color=always --group-directories-first'
+alias tree='exa --tree --color=always --group-directories-first'
+alias ltree='exa --tree --long --group-directories-first'
 
 # Fixing ln to help
 alias ln="ln -rsf"
@@ -60,7 +64,7 @@ alias update-fc='sudo fc-cache -fv'
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 
 #clear shortcut
-alias cls="clear && neofetch"
+alias cls="clear && fastfetch"
 
 #Shutdown and reboot shortcuts
 alias ssn="sudo shutdown now"
@@ -70,5 +74,6 @@ alias sr="sudo reboot"
 alias zshrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
 
 alias su="su -l"
-alias docker="podman"
 alias ytop="ytop -abps"
+alias cat="bat"
+alias cargo="RUSTC_WRAPPER=sccache cargo"
