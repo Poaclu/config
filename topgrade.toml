@@ -12,7 +12,7 @@
 # pre_sudo = false
 
 # Sudo command to be used
-# sudo_command = "sudo"
+sudo_command = "{{run}}"
 
 # Disable specific steps - same options as the command line flag
 disable = ["vim", "node", "git_repos"]
@@ -89,8 +89,8 @@ display_time = true
 [commands]
 # "Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
 # "Custom command using interactive shell (unix)" = "-i vim_upgrade"
-"mlocate database" = "echo 'Launching command' && sudo updatedb && echo 'Done !'"
-"ClamAV" = "sudo freshclam"
+"mlocate database" = "echo 'Launching command' && {{run}} updatedb && echo 'Done !'"
+"ClamAV" = "{{run}} freshclam"
 "dotter" = "cd ~/sources/config/ && dotter -v && echo 'Done !' || echo 'error, go do logs manually'"
 
 [python]
