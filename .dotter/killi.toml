@@ -4,3 +4,4 @@ packages = ["btop", "dwm", "neofetch", "nvim", "obsidian", "paru", "shell", "tmu
 [files]
 
 [variables]
+run = "doas"
