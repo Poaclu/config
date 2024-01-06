@@ -1,8 +1,8 @@
 [helpers]
 
 [desktop.files]
-.xinitrc = "~/.xinitrc"
-.zprofile = "~/.zprofile"
+xinitrc = "~/.xinitrc"
+zprofile = "~/.zprofile"
 
 [bash]
 depends = ["shell"]
@@ -11,19 +11,22 @@ depends = ["shell"]
 bashrc = "~/.bashrc"
 
 [btop.files]
-btop.conf = "~/.config/btop/btop.conf"
+btop = "~/.config/btop/btop.conf"
 
 [dwm.files]
 "dwm/autostart.sh" = "~/.dwm/autostart.sh"
 
+[doas.files]
+doas = { target = "/etc/doas.conf", type = "template", owner = "root" }
+
 [kitty.files]
-kitty.conf = "~/.config/kitty/kitty.conf"
+kitty = "~/.config/kitty/kitty.conf"
 
 [neofetch.files]
-neofetch.conf = "~/.config/neofetch/config.conf"
+neofetch = "~/.config/neofetch/config.conf"
 
 [nixos.files]
-nixos.nix = "~/.config/nixos/configuration.nix"
+nixos = "~/.config/nixos/configuration.nix"
 
 [nvim.files]
 nvim = "~/.config/nvim/init.lua"
@@ -32,7 +35,7 @@ nvim = "~/.config/nvim/init.lua"
 obsidian = "~/.config/obsidian/Preferences"
 
 [paru.files]
-paru.conf = "~/.config/paru/paru.conf"
+paru = "~/.config/paru/paru.conf"
 
 [shell]
 depends = ["desktop"]
@@ -45,10 +48,10 @@ aliasrc = "~/.aliasrc"
 shellrc = "~/.shellrc"
 
 [tmux.files]
-tmux.conf = "~/.tmux.conf"
+tmux = "~/.tmux.conf"
 
 [topgrade.files]
-topgrade.toml = "~/.config/topgrade.toml"
+topgrade = "~/.config/topgrade.toml"
 
 [zsh]
 depends = ["shell"]
