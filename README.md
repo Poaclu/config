@@ -4,12 +4,11 @@ Here are my dotfiles.
 
 ## Deployement
 
-Deploymement goes through stow :
+Deployement goes through [dotter](https://github.com/SuperCuber/dotter)
 
-`stow * -v 1 -t ~`
+To install : `cargo install dotter`
 
-Change `*` to a specific folder if only that folder is needed.
-
-To redeplor (if error)
-
-`stox -R * -v 1 -t ~`
+To deploy : 
+- cd into directory
+- create file with hostname (see [dotter's setup page](https://github.com/SuperCuber/dotter/wiki/Setup-and-Configuration)
+- `dotter`
