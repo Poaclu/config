@@ -91,6 +91,7 @@ display_time = true
 # "Custom command using interactive shell (unix)" = "-i vim_upgrade"
 "mlocate database" = "echo 'Launching command' && sudo updatedb && echo 'Done !'"
 "ClamAV" = "sudo freshclam"
+"dotter" = "cd ~/sources/config/ && dotter -v && echo 'Done !' || echo 'error, go do logs manually'"
 
 [python]
 # enable_pip_review = true                         ###disabled by default
