@@ -1,6 +1,6 @@
 ### ALIASES ###
 
-# Changing "ls" to "exa"sudo pacman -S git dlang-dmd
+# Changing "ls" to "exa"
 alias ls='exa --color=always --group-directories-first'
 alias la='exa -a --color=always --group-directories-first'
 alias ll='exa -la --color=always --group-directories-first'
@@ -11,10 +11,10 @@ alias ltree='exa --tree --long --group-directories-first'
 alias ln="ln -rsf"
 
 # get fastest mirrors
-alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
-alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
-alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
-alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+alias mirror="{{run}} reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+alias mirrord="{{run}} reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrors="{{run}} reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrora="{{run}} reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -55,10 +55,10 @@ alias pdw="pwd"
 alias wget="wget -c"
 
 #grub update
-alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias update-grub="{{run}} grub-mkconfig -o /boot/grub/grub.cfg"
 
 #add new fonts
-alias update-fc='sudo fc-cache -fv'
+alias update-fc='{{run}} fc-cache -fv'
 
 #check vulnerabilities microcode
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
@@ -67,8 +67,8 @@ alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 alias cls="clear && fastfetch"
 
 #Shutdown and reboot shortcuts
-alias ssn="sudo shutdown now"
-alias sr="sudo reboot"
+alias ssn="{{run}} shutdown now"
+alias sr="{{run}} reboot"
 
 #from tech titus
 alias zshrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
