@@ -1,5 +1,18 @@
 includes = []
-packages = ["btop", "dwm", "neofetch", "nvim", "obsidian", "paru", "shell", "tmux", "topgrade", "desktop"]
+packages = [
+"btop", 
+"dwm", 
+"grub",
+"neofetch", 
+"nvim", 
+"obsidian", 
+"pacman",
+"paru", 
+"shell", 
+"tmux", 
+"topgrade", 
+"zsh",
+"desktop"]
 
 [files]
 
