@@ -16,6 +16,9 @@ btop = "~/.config/btop/btop.conf"
 [dwm.files]
 "dwm/autostart.sh" = "~/.dwm/autostart.sh"
 
+[cargo.files]
+cargo = "~/.cargo/config.toml"
+
 [doas.files]
 doas = { target = "/etc/doas.conf", type = "template", owner = "root" }
 

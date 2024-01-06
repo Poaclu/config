@@ -2,6 +2,7 @@ includes = []
 packages = [
 "btop", 
 "dwm", 
+"cargo",
 "grub",
 "neofetch", 
 "nvim", 
