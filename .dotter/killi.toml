@@ -1,0 +1,6 @@
+includes = []
+packages = ["btop", "dwm", "neofetch", "nvim", "obsidian", "paru", "shell", "tmux", "topgrade", "desktop"]
+
+[files]
+
+[variables]

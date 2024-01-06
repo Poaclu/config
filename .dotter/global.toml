@@ -1,0 +1,64 @@
+[helpers]
+
+[default]
+depends = []
+
+[default.files]
+exeptions = ""
+"README.md" = ""
+Notes = ""
+
+[default.variables]
+
+[desktop.files]
+"X/.xinitrc" = "~/.xinitrc"
+"X/.zprofile" = "~/.zprofile"
+
+[bash]
+depends = ["shell"]
+
+[bash.files]
+"shell/.bashrc" = "~/.bashrc"
+
+[btop.files]
+"btop/btop.conf" = "~/.config/btop/btop.conf"
+
+[dwm.files]
+"dwm/autostart.sh" = "~/.dwm/autostart.sh"
+
+[kitty.files]
+"kitty/kitty.conf" = "~/.config/kitty/kitty.conf"
+
+[neofetch.files]
+"neofetch/config.conf" = "~/.config/neofetch/config.conf"
+
+[nixos.files]
+"nixos/configuration.nix" = "~/.config/nixos/configuration.conf"
+
+[nvim.files]
+"nvim/init.lua" = "~/.config/nvim/init.lua"
+
+[obsidian.files]
+"obsidian/Preferences" = "~/.config/obsidian/Preferences"
+
+[paru.files]
+"paru/paru.conf" = "~/.config/paru/paru.conf"
+
+[shell]
+depends = ["desktop"]
+
+[shell.files]
+"shell/.aliasrc" = "~/.aliasrc"
+"shell/.shellrc" = "~/.shellrc"
+
+[tmux.files]
+"tmux/.tmux.conf" = "~/.tmux.conf"
+
+[topgrade.files]
+"topgrade/topgrade.toml" = "~/.config/topgrade.toml"
+
+[zsh]
+depends = ["shell"]
+
+[zsh.files]
+"shell/.zshrc" = "~/.zshrc"
