@@ -19,6 +19,12 @@ btop = "~/.config/btop/btop.conf"
 [doas.files]
 doas = { target = "/etc/doas.conf", type = "template", owner = "root" }
 
+[git.files]
+gitconfig = "~/.gitconfig"
+
+[grub.files]
+grub = { target = "/etc/default/grub", type = "template", owner = "root" }
+
 [kitty.files]
 kitty = "~/.config/kitty/kitty.conf"
 
@@ -34,18 +40,21 @@ nvim = "~/.config/nvim/init.lua"
 [obsidian.files]
 obsidian = "~/.config/obsidian/Preferences"
 
+[pacman.files]
+pacman = { target = "/etc/pacman.conf", type = "template", owner = "root" }
+
 [paru.files]
 paru = "~/.config/paru/paru.conf"
 
 [shell]
 depends = ["desktop"]
 
-[sudo.files]
-sudoers = { target = "/etc/sudoers", type = "template", owner = "root" }
-
 [shell.files]
 aliasrc = "~/.aliasrc"
 shellrc = "~/.shellrc"
+
+[sudo.files]
+sudoers = { target = "/etc/sudoers", type = "template", owner = "root" }
 
 [tmux.files]
 tmux = "~/.tmux.conf"
